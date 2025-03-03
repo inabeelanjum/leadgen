@@ -31,7 +31,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, position, quote
         <h4 className="text-xl font-bold text-[var(--color-black)]">{name}</h4>
         <p className="text-[var(--text-secondary)] italic">{position}</p>
       </div>
-      <p className="text-[var(--text-secondary)] mb-4 text-lg">"{quote}"</p>
+      <p className="text-[var(--text-secondary)] mb-4 text-lg">&ldquo;{quote}&rdquo;</p>
       <div className="text-[var(--color-primary)] font-bold text-lg">{highlight}</div>
     </div>
   );

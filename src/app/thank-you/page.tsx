@@ -1,5 +1,8 @@
 import Link from 'next/link';
 
+// Note: You'll need to create a new favicon.ico file with "PM" or "Prime Midin" branding
+// and replace the existing file at src/app/favicon.ico
+
 export default function ThankYou() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[var(--background-alt)] px-4">
@@ -11,7 +14,7 @@ export default function ThankYou() {
         </div>
         <h1 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--color-black)]">Thank You!</h1>
         <p className="text-xl text-[var(--text-secondary)] mb-8">
-          We've received your inquiry and will get back to you shortly. A member of our team will contact you within 24 hours.
+          Your inquiry has been successfully submitted. A Prime Midin representative will contact you within 24 hours to discuss how we can help grow your business.
         </p>
         <Link 
           href="/" 

@@ -10,7 +10,7 @@ const ContactForm = () => {
   });
 
   // Replace this with your actual email
-  const formSubmitEmail = "your-actual-email@example.com";
+  const formSubmitEmail = "nabeel.anjum@yopmail.com";
 
   return (
     <section id="get-started" className="py-20 bg-[var(--background-alt)]">
@@ -22,11 +22,11 @@ const ContactForm = () => {
           }`}
         >
           <h2 className="text-4xl font-bold mb-4 text-[var(--color-black)]">
-            Get <span className="text-[var(--color-primary)]">Started</span> Today
+            Contact <span className="text-[var(--color-primary)]">Us</span> Today
           </h2>
           <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mb-6"></div>
           <p className="text-xl text-[var(--text-secondary)]">
-            Ready to accelerate your business growth? Request a demo and see how LeadGenPro can transform your lead generation.
+            Ready to elevate your lead generation strategy? Reach out to Prime Midin and discover how we can help grow your business.
           </p>
         </div>
 
@@ -37,15 +37,16 @@ const ContactForm = () => {
           style={{ transitionDelay: '200ms' }}
         >
           <form 
-            action={`https://formsubmit.co/${formSubmitEmail}`} 
+            action="https://formsubmit.co/your-actual-email@example.com" 
             method="POST"
             className="space-y-6"
           >
             {/* Hidden fields for FormSubmit configuration */}
-            <input type="hidden" name="_subject" value="New Inquiry from LeadGenPro Website" />
+            <input type="hidden" name="_subject" value="New Inquiry from Prime Midin Website" />
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="/thank-you" />
+            <input type="hidden" name="_next" value="http://localhost:3000/thank-you" />
             <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_autoresponse" value="Thank you for your inquiry. We have received your message and will get back to you shortly." />
             
             {/* Name and Company */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -118,7 +119,7 @@ const ContactForm = () => {
                     value="inbound-calls"
                     className="mt-1 h-4 w-4 text-[var(--color-primary)] focus:ring-[var(--color-primary)]"
                   />
-                  <span className="text-[var(--text-secondary)]">Customer-Initiated Inbound Calls</span>
+                  <span className="text-[var(--text-secondary)]">Inbound Call Generation</span>
                 </label>
                 
                 <label className="flex items-start space-x-3 cursor-pointer">
@@ -128,7 +129,7 @@ const ContactForm = () => {
                     value="live-transfers"
                     className="mt-1 h-4 w-4 text-[var(--color-primary)] focus:ring-[var(--color-primary)]"
                   />
-                  <span className="text-[var(--text-secondary)]">Live Transfers</span>
+                  <span className="text-[var(--text-secondary)]">Qualified Live Transfers</span>
                 </label>
                 
                 <label className="flex items-start space-x-3 cursor-pointer">
@@ -138,7 +139,7 @@ const ContactForm = () => {
                     value="internet-leads"
                     className="mt-1 h-4 w-4 text-[var(--color-primary)] focus:ring-[var(--color-primary)]"
                   />
-                  <span className="text-[var(--text-secondary)]">Real-Time Internet Leads</span>
+                  <span className="text-[var(--text-secondary)]">Real-Time Digital Leads</span>
                 </label>
                 
                 <label className="flex items-start space-x-3 cursor-pointer">
@@ -148,7 +149,7 @@ const ContactForm = () => {
                     value="aged-lists"
                     className="mt-1 h-4 w-4 text-[var(--color-primary)] focus:ring-[var(--color-primary)]"
                   />
-                  <span className="text-[var(--text-secondary)]">Aged Data Lists</span>
+                  <span className="text-[var(--text-secondary)]">Targeted Data Solutions</span>
                 </label>
               </div>
             </div>

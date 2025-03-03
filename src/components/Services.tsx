@@ -58,7 +58,7 @@ const Services = () => {
           </h2>
           <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mb-6"></div>
           <p className="text-xl text-[var(--text-secondary)]">
-            Discover our comprehensive suite of lead generation solutions designed to accelerate your business growth
+            Prime Midin offers specialized lead generation solutions tailored to your industry needs and growth objectives
           </p>
         </div>
 
@@ -71,8 +71,8 @@ const Services = () => {
                 <path d="M18.5 5.5C18.5 3.29 16.71 1.5 14.5 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             }
-            title="Customer-Initiated Inbound Calls"
-            description="Connect with prospects who are actively reaching out to you—our system routes inbound calls from motivated customers, ensuring immediate engagement with higher conversion rates."
+            title="Inbound Call Generation"
+            description="Our premium inbound call system connects you with prospects actively seeking your services, resulting in higher conversion rates and more efficient sales cycles."
             delay={100}
           />
           
@@ -86,8 +86,8 @@ const Services = () => {
                 <path d="M22 2L17 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             }
-            title="Live Transfers"
-            description="Get on the phone with pre-qualified prospects instantly. Our agents verify interest and intent, then transfer calls to your sales team in real time for immediate closing opportunities."
+            title="Qualified Live Transfers"
+            description="Receive pre-qualified prospects directly to your sales team. Our agents verify interest and intent before transferring calls, maximizing your closing opportunities."
             delay={200}
           />
           
@@ -100,8 +100,8 @@ const Services = () => {
                 <path d="M7.99451 11H8.00349" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             }
-            title="Real-Time Internet Leads"
-            description="Receive prospect data the moment they submit an online form—no delays, no missed opportunities, just instant lead delivery to your CRM or email for immediate follow-up."
+            title="Real-Time Digital Leads"
+            description="Capture and deliver prospect information instantly as they engage with your online presence, enabling immediate follow-up when interest is at its peak."
             delay={300}
           />
           
@@ -115,8 +115,8 @@ const Services = () => {
                 <path d="M22 19.5C22 20.88 20.88 22 19.5 22C18.29 22 17.28 21.14 17.05 20C17.02 19.84 17 19.67 17 19.5C17 18.12 18.12 17 19.5 17C19.67 17 19.84 17.02 20 17.05C21.14 17.28 22 18.29 22 19.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             }
-            title="Aged Data Lists"
-            description="Tap into cost-effective, previously generated leads to re-engage or nurture. We provide curated aged lists tailored to your target market with detailed demographic and behavioral data."
+            title="Targeted Data Solutions"
+            description="Access precisely segmented prospect lists tailored to your specific market. Our data solutions provide comprehensive demographic and behavioral insights for effective targeting."
             delay={400}
           />
         </div>

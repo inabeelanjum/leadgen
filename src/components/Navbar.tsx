@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <Link 
-            href="/services" 
+            href="/#services" 
             className={`text-lg font-medium transition-colors ${
               isScrolled 
                 ? 'text-[var(--color-dark)] hover:text-[var(--color-primary)]' 
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
             Services
           </Link>
           <Link 
-            href="/testimonials" 
+            href="/#testimonials" 
             className={`text-lg font-medium transition-colors ${
               isScrolled 
                 ? 'text-[var(--color-dark)] hover:text-[var(--color-primary)]' 
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
             Testimonials
           </Link>
           <Link 
-            href="/get-started" 
+            href="/#get-started" 
             className="btn btn-primary text-lg px-6 py-2.5"
           >
             Get Started
@@ -93,21 +93,21 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white py-4 px-4 shadow-md absolute top-16 left-0 right-0 z-10">
           <div className="flex flex-col space-y-4">
             <Link 
-              href="/services" 
+              href="/#services" 
               className="text-lg text-[var(--color-dark)] hover:text-[var(--color-primary)] font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link 
-              href="/testimonials" 
+              href="/#testimonials" 
               className="text-lg text-[var(--color-dark)] hover:text-[var(--color-primary)] font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Testimonials
             </Link>
             <Link 
-              href="/get-started" 
+              href="/#get-started" 
               className="btn btn-primary inline-block text-center text-lg px-6 py-2.5"
               onClick={() => setIsMenuOpen(false)}
             >

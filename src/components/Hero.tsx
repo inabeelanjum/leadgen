@@ -26,14 +26,14 @@ const Hero: React.FC = () => {
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8 pt-16">
         <div className="bg-black/20 backdrop-blur-sm p-8 sm:p-12 rounded-xl shadow-lg max-w-4xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-            Generate High-Quality <span className="text-[var(--color-primary-light)]">Leads</span> for Your Business
+            Premium <span className="text-[var(--color-primary-light)]">Lead Generation</span> Solutions
           </h1>
           <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            LeadGenPro helps businesses attract, convert, and close more deals with our innovative lead generation strategies and cutting-edge technology.
+            Prime Midin delivers high-quality leads that convert. Our targeted approach connects your business with potential customers actively seeking your products and services.
           </p>
           <div className="flex justify-center">
             <Link 
-              href="/get-started" 
+              href="#get-started" 
               className="btn btn-primary text-center px-10 py-4 text-lg"
             >
               Get Started

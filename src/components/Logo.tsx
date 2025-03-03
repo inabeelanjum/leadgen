@@ -14,7 +14,8 @@ const Logo: React.FC<LogoProps> = ({ className = '' }) => {
   return (
     <Link href="/" className={`flex items-center ${className}`}>
       <span className="text-2xl font-bold">
-        Lead<span className={isWhiteText ? "text-white" : "text-[var(--color-primary)]"}>Gen</span>Pro
+        <span className={isWhiteText ? "text-white" : "text-[var(--color-primary)]"}>Prime</span>
+        <span>Midin</span>
       </span>
     </Link>
   );

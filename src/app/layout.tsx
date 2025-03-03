@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LeadGenPro | Generate High-Quality Leads for Your Business",
-  description: "LeadGenPro helps businesses generate high-quality leads through innovative marketing strategies and cutting-edge technology.",
+  title: "Prime Midin | Premium Lead Generation Solutions",
+  description: "Prime Midin delivers high-quality leads that convert. Our targeted approach connects your business with potential customers actively seeking your products and services.",
 };
 
 export default function RootLayout({

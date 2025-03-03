@@ -81,11 +81,11 @@ const Testimonials = () => {
           }`}
         >
           <h2 className="text-4xl font-bold mb-4 text-[var(--color-black)]">
-            Success <span className="text-[var(--color-primary)]">Stories</span>
+            Client <span className="text-[var(--color-primary)]">Success</span>
           </h2>
           <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mb-6"></div>
           <p className="text-xl text-[var(--text-secondary)]">
-            See how businesses like yours achieved remarkable growth with LeadGenPro
+            Discover how Prime Midin has helped businesses achieve exceptional growth and ROI
           </p>
         </div>
 
@@ -94,16 +94,16 @@ const Testimonials = () => {
           <TestimonialCard
             name="Sarah Johnson"
             position="Insurance Agency Owner"
-            quote="LeadGenPro transformed our lead generation process. We saw a 30% increase in conversions within the first 90 days, and our sales team is now consistently exceeding their targets."
-            highlight="30% more conversions"
+            quote="Prime Midin revolutionized our lead generation strategy. Their targeted approach delivered prospects who were genuinely interested in our services, resulting in significantly higher conversion rates."
+            highlight="35% increase in qualified leads"
             delay={100}
           />
           
           <TestimonialCard
             name="Michael Chen"
             position="Law Firm Partner"
-            quote="The quality of live transfers is exceptional. Our client acquisition costs dropped by 40% while maintaining high-quality leads. The ROI has been incredible for our practice."
-            highlight="40% lower acquisition costs"
+            quote="The quality of leads from Prime Midin is exceptional. We've been able to focus our resources on closing deals rather than qualifying prospects, dramatically improving our efficiency and profitability."
+            highlight="42% reduction in acquisition costs"
             delay={200}
           />
         </div>
@@ -111,26 +111,26 @@ const Testimonials = () => {
         {/* Stats Row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           <StatCard
-            number="98%"
-            label="Client Satisfaction"
+            number="97%"
+            label="Client Retention"
             delay={300}
           />
           
           <StatCard
-            number="2.5x"
+            number="3.2x"
             label="Average ROI"
             delay={400}
           />
           
           <StatCard
-            number="<1min"
-            label="Average Response Time"
+            number="<1hr"
+            label="Lead Delivery Time"
             delay={500}
           />
           
           <StatCard
-            number="10k+"
-            label="Active Clients"
+            number="5k+"
+            label="Businesses Served"
             delay={600}
           />
         </div>

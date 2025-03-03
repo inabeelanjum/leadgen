@@ -38,13 +38,13 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Logo className={isScrolled ? '' : 'text-white'} />
+        <Logo className={`text-lg ${isScrolled ? '' : 'text-white'}`} />
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <Link 
             href="/services" 
-            className={`font-medium transition-colors ${
+            className={`text-lg font-medium transition-colors ${
               isScrolled 
                 ? 'text-[var(--color-dark)] hover:text-[var(--color-primary)]' 
                 : 'text-white hover:text-white/80'
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
           </Link>
           <Link 
             href="/testimonials" 
-            className={`font-medium transition-colors ${
+            className={`text-lg font-medium transition-colors ${
               isScrolled 
                 ? 'text-[var(--color-dark)] hover:text-[var(--color-primary)]' 
                 : 'text-white hover:text-white/80'
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
           </Link>
           <Link 
             href="/get-started" 
-            className="btn btn-primary"
+            className="btn btn-primary text-lg px-6 py-2.5"
           >
             Get Started
           </Link>
@@ -77,11 +77,11 @@ const Navbar: React.FC = () => {
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
           )}
@@ -94,21 +94,21 @@ const Navbar: React.FC = () => {
           <div className="flex flex-col space-y-4">
             <Link 
               href="/services" 
-              className="text-[var(--color-dark)] hover:text-[var(--color-primary)] font-medium transition-colors"
+              className="text-lg text-[var(--color-dark)] hover:text-[var(--color-primary)] font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link 
               href="/testimonials" 
-              className="text-[var(--color-dark)] hover:text-[var(--color-primary)] font-medium transition-colors"
+              className="text-lg text-[var(--color-dark)] hover:text-[var(--color-primary)] font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Testimonials
             </Link>
             <Link 
               href="/get-started" 
-              className="btn btn-primary inline-block text-center"
+              className="btn btn-primary inline-block text-center text-lg px-6 py-2.5"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Started

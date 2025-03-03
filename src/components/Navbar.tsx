@@ -1,33 +1,64 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Logo from './Logo';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Handle scroll event to change navbar style when scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <nav className="bg-white border-b border-gray-100 py-4">
+    <nav 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled 
+          ? 'bg-white shadow-md py-3' 
+          : 'bg-transparent py-5'
+      }`}
+    >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Logo />
+        <Logo className={isScrolled ? '' : 'text-white'} />
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <Link 
             href="/services" 
-            className="text-[var(--color-dark)] hover:text-[var(--color-primary)] font-medium transition-colors"
+            className={`font-medium transition-colors ${
+              isScrolled 
+                ? 'text-[var(--color-dark)] hover:text-[var(--color-primary)]' 
+                : 'text-white hover:text-white/80'
+            }`}
           >
             Services
           </Link>
           <Link 
             href="/testimonials" 
-            className="text-[var(--color-dark)] hover:text-[var(--color-primary)] font-medium transition-colors"
+            className={`font-medium transition-colors ${
+              isScrolled 
+                ? 'text-[var(--color-dark)] hover:text-[var(--color-primary)]' 
+                : 'text-white hover:text-white/80'
+            }`}
           >
             Testimonials
           </Link>
@@ -41,7 +72,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-[var(--color-dark)]"
+          className={`md:hidden ${isScrolled ? 'text-[var(--color-dark)]' : 'text-white'}`}
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >

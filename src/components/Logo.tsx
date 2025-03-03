@@ -8,10 +8,13 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ className = '' }) => {
+  // Determine if we should use white text based on the className prop
+  const isWhiteText = className.includes('text-white');
+  
   return (
     <Link href="/" className={`flex items-center ${className}`}>
       <span className="text-xl font-bold">
-        Lead<span className="text-[var(--color-primary)]">Gen</span>Pro
+        Lead<span className={isWhiteText ? "text-white" : "text-[var(--color-primary)]"}>Gen</span>Pro
       </span>
     </Link>
   );
